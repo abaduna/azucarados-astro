@@ -3,8 +3,63 @@
 
 <nav class="menu">
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Sobre nosotros</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#nuestroProductos">Nuestrs productos</a></li>
+      <li><a href="#usMarcas">Nuestras marcas</a></li>
     </ul>
   </nav>
+  <style>
+    /* Estilo general para el navbar */
+nav.menu {
+  background-color: #333333bb; /* Color de fondo para el navbar */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  position: fixed; /* Hacer que el navbar permanezca fijo en la parte superior */
+  top: 0; /* Posición del navbar */
+  width: 100%; /* Abarcar todo el ancho de la pantalla */
+  z-index: 1000; /* Asegurarse de que el navbar esté por encima de otros elementos */
+  transition: background-color 0.3s; /* Suave transición para cambios de color */
+}
+
+/* Estilo para la lista */
+nav.menu ul {
+  display: flex; /* Usar flexbox para la lista */
+  justify-content: space-around; /* Distribuir los elementos uniformemente */
+  margin: 0; /* Eliminar margen */
+  padding: 0; /* Eliminar padding */
+  list-style-type: none; /* Eliminar puntos de la lista */
+}
+
+/* Estilo para los elementos de la lista */
+nav.menu ul li {
+  display: inline; /* Mostrar elementos de la lista en línea */
+}
+
+/* Estilo para los enlaces */
+nav.menu ul li a {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Eliminar subrayado */
+  font-weight: bold; /* Negrita para los enlaces */
+  padding: 10px 15px; /* Espaciado interno para los enlaces */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para cambios de color */
+}
+
+/* Efecto hover para los enlaces */
+nav.menu ul li a:hover {
+  background-color: #555; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  nav.menu ul {
+    flex-direction: column; /* Cambiar a una dirección de columna en pantallas pequeñas */
+    align-items: center; /* Centrar elementos */
+  }
+
+  nav.menu ul li {
+    margin-bottom: 10px; /* Espaciado entre elementos en la dirección de columna */
+  }
+}
+
+  </style>

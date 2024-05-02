@@ -1,70 +1,120 @@
-<div class="container">
-  <p class="usProducto">Nuestros productos</p>
+<div class="container" id="nuestroProductos">
+  <p class="usProducto" >Nuestros productos</p>
   <div class="containerGrid">
+    <a href="https://azucaradoscandystore.empretienda.com.ar/golosinas">
+      <div class="producto">
+        <img src="../../aset/golosina.jpg" alt="Golosinas" />
+        <p class="text">Golosinas</p>
+      </div>
+    </a>
+    <a href="https://azucaradoscandystore.empretienda.com.ar/chocolates"
+      ><div class="producto">
+        <img src="../../aset/chocolate.jpg" alt="Chocolate" />
+        <p class="text">Chocolate</p>
+      </div></a
+    >
+
+    <a href="https://azucaradoscandystore.empretienda.com.ar/combos"
+      ><div class="producto">
+        <img src="../../aset/conbo.jpg" alt="Combos" />
+        <p class="text">Combos</p>
+      </div></a
+    >
+
     <div>
-      <img src="../../aset/golosina.jpg" />
-      <p>Golosinas</p>
+      <a
+        href="https://azucaradoscandystore.empretienda.com.ar/box-y-regalos"
+        class="producto"
+      >
+        <img src="../../aset/boxDeRegalo.jpg" alt="Box de Regalo" />
+        <p class="text">Box de Regalo</p>
+      </a>
     </div>
-    <div>
-      <img src="../../aset/chocolate.jpg" />
-      <p>chocolate</p>
-    </div>
-    <div>
-      <img src="../../aset/conbo.jpg" />
-      <p>combos</p>
-    </div>
-    <div>
-      <img src="../../aset/boxDeRegalo.jpg" />
-      <p>box de regalo</p>
-    </div>
-    <div>
-      <img src="../../aset/comboDeCumpleAño.jpg" />
-      <p>combos de cumpleaño</p>
-    </div>
-    <div>
-      <img src="../../aset/snacks.jpg" />
-      <p>snacks</p>
-    </div>
+
+    <a href="https://azucaradoscandystore.empretienda.com.ar/combo-cumpleanos">
+      <div class="producto">
+        <img src="../../aset/comboDeCumpleAño.jpg" alt="Combos de Cumpleaños" />
+        <p class="text">Combos de Cumpleaños</p>
+      </div></a
+    >
+
+    <a href="https://azucaradoscandystore.empretienda.com.ar/snacks"
+      ><div class="producto">
+        <img src="../../aset/snacks.jpg" alt="Snacks" />
+        <p class="text">SNACKS</p>
+      </div>
+    </a>
   </div>
+
+  <style>
+    a {
+      text-decoration: none;
+
+      color: inherit;
+
+      margin: 0;
+      padding: 0;
+
+      font: inherit;
+
+      border: none;
+      box-shadow: none;
+
+      background: transparent;
+      outline: none;
+    }
+    .usProducto {
+      color: rgb(129, 128, 128); 
+      font-size: 1.5em; 
+      font-size: xx-large;
+      font-weight: 800;
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    .text{
+      color: rgb(70, 70, 70); 
+      font-size: 1.5em; 
+      font-size: xx-large;
+      font-weight: 800;
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    .container {
+      margin-top: 200px;
+    }
+
+    .containerGrid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+
+    .producto {
+      height: 50vh;;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centrar elementos verticalmente */
+      justify-content: center; /* Centrar elementos horizontalmente */
+      border-radius: 25%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background: #adadad;
+      padding: 15px;
+    }
+
+    .producto:hover {
+      background: #5c5c5c75;
+    }
+
+    .containerGrid img {
+      width: 50%; /* El ancho de la imagen será del 50% del contenedor */
+      height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .containerGrid p {
+      margin: 0;
+      padding-top: 5px;
+      text-align: center; /* Centrar texto horizontalmente */
+    }
+  </style>
 </div>
-<style>
-  .usProducto {
-    font-size: xx-large;
-    font-weight: 800;
-    text-align: center;
-
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .container {
-    margin-top: 200px;
-  }
-  .containerGrid {
-    display: grid;
-    grid-template-columns: repeat(
-      2,
-      minmax(150px, 1fr)
-    ); 
-    gap: 10px; 
-  }
-
-  .containerGrid div {
-    border-radius: 25%;
-    text-align: center; /* Centrar el texto */
-    padding: 10px;
-    border: 1px solid #ddd; /* Borde para visualización */
-    background: #adadad; /* Fondo para mejor visibilidad */
-  }
-  .containerGrid div:hover {
-    background: #5c5c5c75; /* Fondo para mejor visibilidad */
-  }
-  .containerGrid img {
-    width: 50%; /* El ancho de la imagen será del 100% del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
-    object-fit: cover; /* Recortar o expandir la imagen para que ocupe todo el espacio del contenedor */
-  }
-
-  .containerGrid p {
-    margin: 0; /* Eliminar márgenes por defecto */
-    padding-top: 5px; /* Espacio entre la imagen y el texto */
-  }
-</style>

@@ -1,5 +1,5 @@
-<div>
-  <p>Trabajamos con las marcas</p>
+<div id="usMarcas">
+  <p class="text">Trabajamos con las marcas</p>
   <div class="gridContainer">
     <div><img class="milkaImg" src="../../aset/Milka_Logo.svg.png" /></div>
     <div><img src="../../aset/logDeOreo.jpg" /></div>
@@ -7,10 +7,19 @@
   </div>
 </div>
 <style>
+  .text{
+      color: rgb(70, 70, 70); 
+      font-size: 1.5em; 
+      font-size: xx-large;
+      font-weight: 800;
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
   .gridContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
   .gridContainer img {
     width: 100%;
