@@ -1,0 +1,70 @@
+<div class="container">
+  <p class="usProducto">Nuestros productos</p>
+  <div class="containerGrid">
+    <div>
+      <img src="../../aset/golosina.jpg" />
+      <p>Golosinas</p>
+    </div>
+    <div>
+      <img src="../../aset/chocolate.jpg" />
+      <p>chocolate</p>
+    </div>
+    <div>
+      <img src="../../aset/conbo.jpg" />
+      <p>combos</p>
+    </div>
+    <div>
+      <img src="../../aset/boxDeRegalo.jpg" />
+      <p>box de regalo</p>
+    </div>
+    <div>
+      <img src="../../aset/comboDeCumpleAño.jpg" />
+      <p>combos de cumpleaño</p>
+    </div>
+    <div>
+      <img src="../../aset/snacks.jpg" />
+      <p>snacks</p>
+    </div>
+  </div>
+</div>
+<style>
+  .usProducto {
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .container {
+    margin-top: 200px;
+  }
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      minmax(150px, 1fr)
+    ); 
+    gap: 10px; 
+  }
+
+  .containerGrid div {
+    border-radius: 25%;
+    text-align: center; /* Centrar el texto */
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde para visualización */
+    background: #adadad; /* Fondo para mejor visibilidad */
+  }
+  .containerGrid div:hover {
+    background: #5c5c5c75; /* Fondo para mejor visibilidad */
+  }
+  .containerGrid img {
+    width: 50%; /* El ancho de la imagen será del 100% del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Recortar o expandir la imagen para que ocupe todo el espacio del contenedor */
+  }
+
+  .containerGrid p {
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding-top: 5px; /* Espacio entre la imagen y el texto */
+  }
+</style>

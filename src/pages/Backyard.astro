@@ -1,0 +1,29 @@
+<div>
+  <p>Trabajamos con las marcas</p>
+  <div class="gridContainer">
+    <div><img class="milkaImg" src="../../aset/Milka_Logo.svg.png" /></div>
+    <div><img src="../../aset/logDeOreo.jpg" /></div>
+    <div><img src="../../aset/logCoflerBlock.png" /></div>
+  </div>
+</div>
+<style>
+  .gridContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .gridContainer img {
+    width: 100%;
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Recortar o expandir la imagen para que ocupe todo el espacio del contenedor */
+  }
+  .gridContainer div {
+    width: 33%;
+   
+  }
+  .milkaImg {
+    max-width: 100%;
+    
+
+  }
+</style>
